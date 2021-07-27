@@ -1,8 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #0A143A;
+}
+
+a {
+  text-decoration: none;
 }
 .container {
-  width: 1440px;
+  max-width: 1146px;
   margin: auto;
 }
 
@@ -28,16 +34,13 @@ body {
 .nav-list-link {
   text-decoration: none;
   color: #000;
-  font-size: 14px;
   line-height: 16px;
-  color: #0A143A;
 }
 .btn-group {
   display: flex;
   margin-left: auto;
 }
 .button-primary {
-  font-size: 14px;
   line-height: 16px;
   border: none;
   white-space: none;
@@ -50,7 +53,6 @@ body {
 }
 .hollow {
   background-color: rgba(0, 0, 0, 0);
-  color: #0A143A;
   margin-right: 10px;
 }
 
@@ -62,7 +64,7 @@ body {
   padding: 3px;
   align-items: center;
   border-radius: 5px;
-
+  margin-bottom: 42px;
 }
 .search-input {
   flex-grow: 1;
@@ -82,4 +84,118 @@ body {
 }
 .search-icon {
   margin-right: 5px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin: 0;
+  max-width: 195px;
+}
+
+.like {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-text {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.card-time {
+  margin-top: 0;
+}
+.card-text,
+.card-time {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+
+.page-title {
+  margin-top: 0;
+}
+
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+}
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.footer-menu-item {
+  margin-bottom: 5px;
+}
+.footer-text {
+  line-height: 16px;
+  color: #C4C4C4;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
 }
